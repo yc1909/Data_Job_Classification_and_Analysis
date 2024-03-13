@@ -28,7 +28,7 @@ The project includes a Flask server implemented in `server.py`. It can be run us
 
 ```bash
 # Clone the repository
-git clone https://github.com/yc1909/Data_Job_Classification.git
+git clone https://github.com/yc1909/Data_Job_Classification_and_Analysis.git
 
 # Navigate to the project directory
 cd Data_Job_Classification
@@ -61,7 +61,7 @@ Different machine learning models were trained and hyperparameter tuned using Gr
 
 ```bash
 
-- DataJobClassification                             
+- Data_Job_Classification_Analysis                            
   - README.md                                          --- This is the readme file of the project, containing description of the project.
   - application                                        --- Contains all the important files needed to build the project.                                     
     - artifacts                                        --- Stored artifacts like trained models and skills lists.

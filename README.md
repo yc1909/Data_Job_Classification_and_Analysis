@@ -136,6 +136,6 @@ Suggestions for enhancing the application:
 
 1. Optimize the model by retraining it with the least predictive features.
 2. Integrate a fourth feature employing a regression model to forecast salary based on data roles.
-3. Preprocess data through the utilization of NLP packages such as spaCy, Gensim, etc., aiming to further improve performance scores.
+3. Preprocess data through the utilization of NLP packages such as spaCy, Gensim, etc., aiming to further improve performance score.
 
 Pull requests are welcome! For significant modifications, kindly initiate an issue for discussion before implementing changes or contributing.

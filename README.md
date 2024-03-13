@@ -100,7 +100,7 @@ Different machine learning models were trained and hyperparameter tuned using Gr
     - feature2.jpg                                     --- Image file (working of feature2).
     - feature3.jpg                                     --- Image file (working of feature3).
     - landing.jpg                                      --- Image file (landing page illustration).
-	-nginx_setup.jpg                                   --- Image file (nginx setup illustartion).
+    -nginx_setup.jpg                                   --- Image file (nginx setup illustartion).
   - model                                              --- Model-related files.
     - Data Scientist Classification.ipynb              --- Jupyter notebook of Data Job Classification and Analysis.
     - dataset                                          --- Dataset directory.

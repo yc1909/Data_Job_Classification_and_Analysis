@@ -1,0 +1,9 @@
+#skillsForm div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: baseline;
+}
+
+#skillsForm div input[type="radio"] {
+    margin-right: 5px;
+}

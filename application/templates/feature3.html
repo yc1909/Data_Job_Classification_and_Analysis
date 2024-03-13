@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Graphs</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='feature3.css') }}">
+</head>
+<body>
+
+    <h2>Skill Graphs</h2>
+
+    <div class="dropdown-container">
+        <h3>select job role</h3>
+        <div class="dropdown-btn" id="jobRoleBtn">Select Job Role</div>
+        <div class="dropdown-content" id="jobRoleDropdown">
+            <div class="dropdown-option" data-job-role="datascientist">Data Scientist</div>
+            <div class="dropdown-option" data-job-role="dataanalyst">Data Analyst</div>
+            <div class="dropdown-option" data-job-role="dataengineer">Data Engineer</div>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <div class="chart-wrapper"><div class="chart" id="technologiesChart"></div></div>
+        <div class="chart-wrapper"><div class="chart" id="packagesChart"></div></div>
+        <div class="chart-wrapper"><div class="chart" id="softSkillsChart"></div></div>
+    </div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='script3.js') }}"></script>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById('jobRoleDropdown').classList.toggle('show');
+        }
+
+        function selectJobRole(jobRole) {
+            document.getElementById('jobRoleBtn').innerText = jobRole.charAt(0).toUpperCase() + jobRole.slice(1);
+            toggleDropdown();
+            updateGraphs();
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                const dropdowns = document.getElementsByClassName('dropdown-content');
+                for (const dropdown of dropdowns) {
+                    if (dropdown.classList.contains('show')) {
+                        dropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

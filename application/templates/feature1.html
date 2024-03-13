@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Selector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='feature1.css') }}">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form id="skillsForm" action="{{ url_for('prediction') }}" method="post">
+                    <label for="search">Search Skills:</label>
+                    <input type="text" id="search" placeholder="Search for skills...">
+
+                    <label for="skills">Select Skills:</label>
+                    <select name="skills" id="skills" multiple>
+                        {% for skill in skills_list %}
+                            <option value="{{ skill }}">{{ skill }}</option>
+                        {% endfor %}
+                    </select>
+
+
+                    <div id="selected-skills-container"></div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </td>
+            <td>
+
+                <div id="result-section">
+                    <h2>RESULT</h2>
+                    <div id="result-container">
+                        <p><b>Predicted Job Role</b></p>
+                        <div id="predicted-job-role">
+                            <p> <span id="predicted-role"></span></p>
+                        </div>
+                        <table id="probability-table">
+                            <tr>
+                                <th>Job Role</th>
+                                <th>Probability (%)</th>
+                            </tr>
+                            <tr>
+                                <td>Data Scientist</td>
+                                <td id="prob-data-scientist"></td>
+                            </tr>
+                            <tr>
+                                <td>Data Analyst</td>
+                                <td id="prob-data-analyst"></td>
+                            </tr>
+                            <tr>
+                                <td>Data Engineer</td>
+                                <td id="prob-data-engineer"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

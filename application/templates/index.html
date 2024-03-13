@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>The Fast Track to Your Next Data Job</h1>
+
+    <div class="options">
+
+        <div class="option">
+            <img src="{{ url_for('static', filename='images/job-hunt-concept-illustration_114360-446.jpg') }}" alt="Predict Job Role">
+            <button onclick="window.location.href='{{ url_for('feature1') }}';">Discover Your Data Job Destiny</button>
+        </div>
+
+
+        <div class="option">
+            <img src="{{ url_for('static', filename='images/progress.jpg') }}" alt="Track Your Progress">
+            <button onclick="window.location.href='{{ url_for('feature2') }}';">Explore Your Skills Journey</button>
+        </div>
+
+
+        <div class="option">
+            <img src="{{ url_for('static', filename='images/3315370-200.png') }}" alt="In Demand Skills">
+            <button onclick="window.location.href='{{ url_for('feature3') }}';">Skills Insight</button>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

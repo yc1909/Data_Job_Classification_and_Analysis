@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Analyser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='feature1.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='feature2.css') }}">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form id="skillsForm" action="{{ url_for('missing_skills_analysis') }}" method="post">
+                    <label for="search">Search Skills:</label>
+                    <input type="text" id="search" placeholder="Search for skills...">
+
+                    <label for="skills">Select Skills:</label>
+                    <select name="skills" id="skills" multiple>
+                        {% for skill in skills_list %}
+                            <option value="{{ skill }}">{{ skill }}</option>
+                        {% endfor %}
+                    </select>
+
+
+                    <div id="selected-skills-container"></div>
+
+
+                    <label>Select Target Job Role:</label>
+                    <div>
+                        <input type="radio" id="dataScientist" name="targetRole" value="Data Scientist" checked>
+                        <label for="dataScientist">Data Scientist</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="dataAnalyst" name="targetRole" value="Data Analyst">
+                        <label for="dataAnalyst">Data Analyst</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="dataEngineer" name="targetRole" value="Data Engineer">
+                        <label for="dataEngineer">Data Engineer</label>
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </td>
+            <td>
+
+                <div id="result-section">
+                    <h2>RESULT</h2>
+                    <div id="result-container">
+                        <p><b>Percentage of Skill Covered:</b></p>
+                        <div id="percent-skills-covered">
+                            <p> <span id="percent-covered"></span></p>
+                        </div>
+
+                        <p><b>Skills Left to be Covered:</b></p>
+                        <div id="skills-left-covered">
+                            <p> <span id="skills-left"></span></p>
+                        </div>
+
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <script src="{{ url_for('static', filename='script2.js') }}"></script>
+</body>
+
+</html>

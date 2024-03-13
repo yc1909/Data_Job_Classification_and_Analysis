@@ -1,0 +1,136 @@
+{
+  "datascientist":
+{
+  "soft_skills": {
+   "problem solving": 227,
+    "teamwork": 136,
+    "collaboration": 206,
+    "communication": 469,
+    "leadership": 121,
+    "research": 113,
+    "analytical": 171,
+    "critical thinking": 200
+  },
+  "technologies": {
+    "artificial intelligence": 543,
+    "r": 1493,
+	"machine learning": 2950,
+    "python": 2902,
+    "tableau": 612,
+	"power bi": 442,
+    "sql": 1772,
+    "git": 249,
+    "java": 443,
+    "hadoop": 478,
+    "spark": 604,
+    "aws": 620,
+    "azure": 372,
+    "github": 113,
+    "linux": 122,
+    "docker": 191,
+    "kubernetes": 136,
+    "gcp": 206,
+    "javascript": 161
+  },
+  "packages": {
+    "pandas": 287,
+    "scikit-learn": 262,
+    "tensorflow": 499,
+    "pytorch": 436,
+    "numpy": 231,
+    "matplotlib": 128,
+    "pyspark": 151,
+    "keras": 214
+  }
+},
+  "dataanalyst":
+  {
+   "soft_skills": {
+    "problem solving": 395,
+    "communication": 710,
+    "reporting": 418,
+    "collaboration": 233,
+    "datadriven decision making": 119,
+    "organizational skills": 151,
+    "analytical skills": 443,
+    "attention to detail": 292,
+    "teamwork": 310,
+    "critical thinking": 186,
+    "consulting": 114,
+    "agile": 166
+  },
+  "technologies": {
+   "excel": 766,
+ "tableau": 1193,
+ "sql": 1836,
+ "r": 846,
+ "power bi": 833,
+ "machine learning": 461,
+ "python": 1326,
+ "java": 104,
+ "informatica powercenter": 248,
+ "oracle": 125,
+ "sas": 275,
+ "aws": 181,
+ "azure": 110,
+ "big data": 181,
+ "snowflake": 114
+  },
+  "packages": {
+    "pandas": 766,
+    "numpy": 412,
+    "matplotlib": 613,
+    "seaborn": 494,
+    "scikit-learn": 218
+  }
+  },
+  "dataengineer":{
+    "soft_skills":{
+    "problem-solving": 126,
+    "teamwork": 125,
+    "agile": 938,
+    "project management": 192,
+    "communication": 417,
+    "collaboration": 148,
+    "analytical skills": 341,
+    "scrum": 160,
+    "consulting": 127
+  },
+  "technologies": {
+    "java": 1516,
+    "scala": 1170,
+    "python": 3132,
+    "nosql": 721,
+    "redshift": 615,
+    "snowflake": 998,
+    "unix/linux": 303,
+    "hadoop": 1013,
+    "informatica": 169,
+    "sql": 2234,
+    "spark": 1626,
+    "linux": 327,
+    "docker": 366,
+    "kubernetes": 370,
+    "airflow": 769,
+    "azure": 1073,
+    "databricks": 404,
+    "kafka": 966,
+    "postgresql": 321,
+    "cassandra": 416,
+    "aws": 1878,
+    "hive": 740,
+    "emr": 460,
+    "big data": 1078,
+    "gcp": 451,
+    "git": 427,
+    "ci/cd": 277,
+    "apache airflow": 102,
+    "jenkins": 211
+
+  },
+    "packages": {
+
+    }
+
+  }
+}

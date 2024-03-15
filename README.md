@@ -1,6 +1,6 @@
 # Data Job Classification and Analysis
 
-<img src="assests/landing.jpg" alt="Example Image" width="1000"/>
+<img src="assests/" alt="Example Image" width="1000"/>
 
 
 ## Overview
@@ -51,9 +51,9 @@ The dataset, `ds_jobs.csv` was created through the integration of three distinct
 <a name="model-training"></a>
 Different machine learning models were trained and hyperparameter tuned using GridSearchCV, and among them, the Support Vector Classifier (SVC) demonstrated superior performance, achieving an overall score of 93%. The trained model is present in `data_science_classifier_final.pickle`. Below are the results of model training:
 
-<img src="assests/cm_svc.jpg" alt="CM Image" width="500"/>
+<img src="assests/" alt="CM Image" width="500"/>
 
-<img src="assests/cr_svm.jpg" alt="CR Image" width="500"/>
+<img src="assests/" alt="CR Image" width="500"/>
 
 
 ## Project Structure
@@ -100,7 +100,7 @@ Different machine learning models were trained and hyperparameter tuned using Gr
     - feature2.jpg                                     --- Image file (working of feature2).
     - feature3.jpg                                     --- Image file (working of feature3).
     - landing.jpg                                      --- Image file (landing page illustration).
-    -nginx_setup.jpg                                   --- Image file (nginx setup illustartion).
+    - nginx_setup.jpg                                   --- Image file (nginx setup illustartion).
   - model                                              --- Model-related files.
     - Data Scientist Classification.ipynb              --- Jupyter notebook of Data Job Classification and Analysis.
     - dataset                                          --- Dataset directory.
@@ -112,22 +112,22 @@ Different machine learning models were trained and hyperparameter tuned using Gr
 <a name="results"></a>
 1. The first feature, 'Discover Your Data Job Destiny', involves a role predictor utilizing the trained model `data_science_classifier_final.pickle`. This feature receives a list of user skills, offering job role suggestions along with corresponding probabilities for each category based on the provided skills.
 
-<img src="assests/feature1.jpg" alt="Feature1 Image" width="800" height = "500"/>
+<img src="assests/" alt="Feature1 Image" width="800" height = "500"/>
 
 2. The second feature,'Explore Your Skills Journey', is a skill analyzer that, when given the desired job role and user-provided skills, calculates the percentage of total skills covered and provides a list of skills that still need to be acquired. This functionality is accomplished through the implementation of the `missing_skills_analysis()` function in the `util.py` file.
 
-<img src="assests/feature2.jpg" alt="Feature2 Image" width="800" height = "500"/>
+<img src="assests/" alt="Feature2 Image" width="800" height = "500"/>
 
 3. The third feature,'Skills Insight,' presents a visual display of sought-after skills for job roles. This is achieved through a Python dictionary `separated_in_demand_skills_0.json`, which contains skills for each role divided into three categories: technologies, packages, and soft skills. The implementation involves the use of JavaScript to create the graphical representation.
 
-<img src="assests/feature3.jpg" alt="Feature3 Image" width="800" height = "500"/>
+<img src="assests/" alt="Feature3 Image" width="800" height = "500"/>
 
 
 ## Deployment
 <a name="deployment"></a>
 The application was deployed on an AWS EC2 instance with aim of making it dynamic. Nginx was employed to handle all incoming HTTP requests. A reverse proxy configuration was implemented to route these requests to the Python Flask Server, which is also hosted on the same EC2 instance.
 
-<img src="assests/nginx_setup.jpg" alt="Nginx Image" width="500"/>
+<img src="assests/" alt="Nginx Image" width="500"/>
 
 
 ## Contribution

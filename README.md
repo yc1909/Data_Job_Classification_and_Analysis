@@ -3,15 +3,15 @@
 <img src="assests/landing_page.jpeg" alt="Example Image" width="1000"/>
 
 
-## Overview
-<a name="overview"></a>
+## Introduction
+<a name="introduction"></a>
 The realm of data is expansive, encompassing a myriad of skills essential for entry. Roles such as Data Scientists, Data Analysts, and Data Engineers all share the common term 'Data' in their titles, implying a connection to data-related tasks. However, discerning between these roles becomes challenging when attempting to delineate their skill requirements, as there is significant overlap among the skills, making it difficult to identify the key competencies within the vast landscape of data-related expertise.
 
 Data Job Classification/Analysis has been designed to address precisely this issue. It assists in predicting the ideal data-oriented role tailored to your skills, offers insights into the specific skills required for a given data role, and provides an analysis of the skills currently in demand.
 
 
 ## Table of Contents
-1. [Introduction](#overview)
+1. [Introduction](#introduction)
 2. [Getting Started](#getting-started)
 3. [Usage](#usage)
    - [Data Preparation](#data-preparation)
